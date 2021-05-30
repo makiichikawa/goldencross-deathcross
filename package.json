@@ -1,0 +1,41 @@
+{
+  "name": "goldencross-deathcross",
+  "version": "0.0.1",
+  "description": "list of golden cross stocks. list of death cross stocks. STE. CLI tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "fixlint": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makiichikawa/goldencross-deathcross.git"
+  },
+  "keywords": [
+    "goldencross",
+    "deathcross",
+    "STE",
+    "CLI"
+  ],
+  "author": "makiichikawa <punkfolkfolk@gmail.com> (https://github.com/makiichikawa)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makiichikawa/goldencross-deathcross/issues"
+  },
+  "homepage": "https://github.com/makiichikawa/goldencross-deathcross#readme",
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "jest": "^27.0.1"
+  },
+  "dependencies": {
+    "japanese-holidays": "^1.0.9",
+    "yahoo-finance": "^0.3.7"
+  }
+}
