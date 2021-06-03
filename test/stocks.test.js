@@ -18,7 +18,7 @@ test('createNumbers (1300, 1304)', () => {
   expect(stocks.createNumbers(1300, 1304)).toEqual([1300, 1301, 1302, 1303, 1304])
 })
 
-test.skip('autoc(num) undefind', () => {
+test('autoc(num) undefind', () => {
   const stocks = new Stocks(2005)
   return stocks.autoc(2005).then((value) => {
     expect(value).toBe(undefined)
