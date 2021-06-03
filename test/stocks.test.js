@@ -2,15 +2,16 @@ const Stocks = require('../lib/stocks')
 
 test('getstocks symbol 7928', async () => {
   const stocks = new Stocks(7928)
+  await stocks.init()
   return stocks.getRecentStocks(1).then((result) => {
-    expect(result['7928.T'][0].close).toBe(1041)
+    expect(result['7928.T'][0].close).toBe(1106)
   })
 })
 
-test('getSymbols food', async () => {
+test('getSymbols 2004', async () => {
   const stocks = new Stocks(2004)
   const result = await stocks.getSymbols(2004)
-  expect(result).toContain('2004.T')
+  expect(result).toEqual([{ symbol: '2004.T', name: 'Showa Sangyo Co., Ltd.' }])
 })
 
 test('createNumbers (1300, 1304)', () => {
@@ -28,6 +29,6 @@ test('autoc(num) undefind', () => {
 test('autoc(num) 2004.T', () => {
   const stocks = new Stocks(2004)
   return stocks.autoc(2004).then((value) => {
-    expect(value).toBe('2004.T')
+    expect(value).toEqual({ symbol: '2004.T', name: 'Showa Sangyo Co., Ltd.' })
   })
 })
