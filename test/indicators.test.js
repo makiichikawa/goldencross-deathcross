@@ -1,5 +1,7 @@
+const Stocks = require('../lib/stocks')
+const stocks = new Stocks()
 const Indicators = require('../lib/indicators')
-const indicators = new Indicators(7298)
+const indicators = new Indicators(stocks)
 
 test('isGoldenCross true', async () => {
   expect(indicators.isGoldenCross([2.1, 2], [2, 2])).toBe(true)

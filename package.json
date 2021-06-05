@@ -35,6 +35,7 @@
     "jest": "^27.0.1"
   },
   "dependencies": {
+    "enquirer": "^2.3.6",
     "japanese-holidays": "^1.0.9",
     "moving-averages": "^4.0.6",
     "yahoo-finance": "^0.3.7",
