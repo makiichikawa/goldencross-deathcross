@@ -2,10 +2,10 @@
 
 main()
 async function main () {
-  const Stocks = require('./stocks')
+  const Stocks = require('./lib/stocks')
   const stocks = new Stocks()
 
-  const Prompt = require('./prompt')
+  const Prompt = require('./lib/prompt')
   const indicatorsPrompt = new Prompt('choose indicators',
     'indicators',
     ['golden', 'death'])
@@ -18,7 +18,7 @@ async function main () {
     choices)
   let industryOrSymbol = await industryPrompt.selectRun()
 
-  const Indicators = require('../lib/indicators')
+  const Indicators = require('./lib/indicators')
   const indicators = new Indicators(stocks)
   if (industryOrSymbol === 'yourself') {
     const readlinePrompt = new Prompt('Please Enter symbols(four-digit-number. ex 2001, 2002)')
