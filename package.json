@@ -8,6 +8,9 @@
     "lint": "eslint .",
     "fixlint": "eslint --fix ."
   },
+  "bin": {
+    "find-crossover-signals": "./index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/makiichikawa/goldencross-deathcross.git"
