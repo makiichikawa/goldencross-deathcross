@@ -9,8 +9,21 @@ And, I used simple moving average (5days, 25days) in order to find crossover sto
 npm i goldencross-deathcross
 ```
 
-## usage : `find-crossover-signals`
-1. Please choose crossover signals(golden cross or death cross)
+## usage 
+1. Please type a command
+
+```
+$ ./node_modules/.bin/find-crossover-signals
+```
+
+or
+
+```
+$ export PATH=$PATH:./node_modules/.bin
+$ find-crossover-signals
+```
+
+2. Please choose crossover signals(golden cross or death cross)
 
   ```
   find-crossover-signals
@@ -19,7 +32,7 @@ npm i goldencross-deathcross
     death
   ```
 
-2. Please choose industry that you want to analyze.
+3. Please choose industry that you want to analyze.
 if you choose 'yourself', you are able to analyze symbols you entered.
 
 ```
@@ -38,7 +51,7 @@ if you choose 'yourself', you are able to analyze symbols you entered.
   yourself
 ```
 
-3. Please press the enter key.  Analysis is started.
+4. Please press the enter key.  Analysis is started.
 The more symbols being analyzed, the more time it takes.
 
 ```
