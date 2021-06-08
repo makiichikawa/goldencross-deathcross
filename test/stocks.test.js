@@ -2,15 +2,15 @@ const Stocks = require('../lib/stocks')
 
 test('getstocks symbol 7928', async () => {
   const stocks = new Stocks()
-  await stocks.init(7928)
+  await stocks.init([7928])
   return stocks.getRecentStocks(1).then((result) => {
-    expect(result['7928.T'][0].close).toBe(1104)
+    expect(result['7928.T'][0].close).toBe(1101)
   })
 })
 
 test('getSymbols 2004', async () => {
   const stocks = new Stocks()
-  const result = await stocks.getSymbols(2004)
+  const result = await stocks.getSymbols([2004])
   expect(result).toEqual([{ symbol: '2004.T', name: 'Showa Sangyo Co., Ltd.' }])
 })
 

@@ -38,10 +38,10 @@ test('datetostring 20211111', () => {
 
 test('getPeiod term=3', () => {
   const period = new Period(3)
-  expect(period.getPeriod()).toEqual({ start: '2021-05-25', end: '2021-06-01' })
+  expect(period.getPeriod()).toEqual({ start: '2021-06-02', end: '2021-06-09' })
 })
 
 test('getPeiod term=18', () => {
   const period = new Period(18)
-  expect(period.getPeriod()).toEqual({ start: '2021-04-28', end: '2021-06-01' })
+  expect(period.getPeriod()).toEqual({ start: '2021-05-12', end: '2021-06-09' })
 })

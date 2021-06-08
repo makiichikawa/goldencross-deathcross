@@ -1,6 +1,6 @@
 {
   "name": "goldencross-deathcross",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "list of golden cross stocks. list of death cross stocks. STE. CLI tool.",
   "main": "index.js",
   "scripts": {
